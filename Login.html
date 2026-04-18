@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Worklink Lite | Jobs</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="site-header">
+                <a class="brand" href="dashboard.html">
+                    <span class="brand-mark">WL</span>
+                    <span class="brand-copy">
+                        <strong>WorkLink Lite</strong>
+                        <span> Local jobs and services</span>
+                    </span>
+                </a>
+                <nav class="main-nav">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="jobs.html">Jobs</a>
+                    <a href="service.html">Services</a>
+                    <a class="is-active" href="login.html">Login</a>
+                </nav>
+            </header>
+            <main>
+                <section class="section-block form-layout">
+                    <form class="form-card" data-login-form>
+                        <div>
+                            <p class="eyebrow">Demo access</p>
+                            <h1 class="page-title"> Log in to continue</h1>
+                            <p class="lead"> This is a prototype login screen for presentation purposes only.</p>
+                        </div>
+
+                        <label class="field">
+                            <span>Email</span>
+                            <input class="input" type="email" placeholder="name@example.com" required>
+                        </label>
+                        <label class="field">
+                            <span>Password</span>
+                            <input class="input" type="password" placeholder="Enter password" required>
+                        </label>
+                        <button class="button button-primary" type="submit">Demo Login</button>
+                        <div class="notice-is-hidden" data-form-notice></div>
+                    </form>
+
+                    <aside class="panel-card">
+                        <p class="eyebrow">Prototype Note</p>
+                        <h2>Frontend-only experience</h2>
+                        <p class="section-copy">
+                            This screen demonstrates how authentication could fit into the product later without
+                            adding backend logic right now.
+                        </p>
+                    </aside>
+                </section>
+            </main>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
