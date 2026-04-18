@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WorkLink Lite | Dashboard</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="ht tps://fonts.gstatic.com" crossorigin>
+ <link
+   href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+   rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <div class="page-shell" data-dashboard>
+   <header class="site-header">
+     <a class="brand" href="dashboard.html">
+       <span class="brand-mark">WL</span>
+       <span class="brand-copy">
+         <strong>WorkLink Lite</strong>
+         <span>Local jobs and services</span>
+       </span>
+     </a>
+     <nav class="main-nav">
+       <a class="is-active" href="dashboard.html">Dashboard</a>
+       <a href="jobs.html">Jobs</a>
+       <a href="service.html">Services</a>
+       <a href="post-job.html">Post Job</a>
+       <a href="post-service.html">Post Service</a>
+     </nav>
+   </header>
+
+   <main>
+     <section class="hero">
+       <div class="hero-panel hero-copy">
+         <p class="eyebrow">Frontend-based marketplace prototype</p>
+         <h1 class="display-title">Find local work or hire local talent faster.</h1>
+         <p class="lead">
+           WorkLink Lite combines a practical jobs board with a service marketplace, using only HTML, CSS,
+           JavaScript, and Local Storage to simulate a real platform.
+         </p>
+         <div class="hero-actions">
+           <a class="button button-primary" href="jobs.html">Explore Jobs</a>
+           <a class="button button-secondary" href="service.html">Browse Services</a>
+         </div>
+       </div>
+
+       <div class="hero-panel hero-visual">
+         <div class="spotlight-card">
+           <p class="eyebrow">Prototype flow</p>
+           <h2>Browse, post, search, apply, and hire from one clean interface.</h2>
+         </div>
+         <div class="mini-card-grid">
+           <article class="mini-card">
+             <p class="eyebrow">Students</p>
+             <h3>Side gigs and flexible opportunities</h3>
+           </article>
+           <article class="mini-card">
+             <p class="eyebrow">Freelancers</p>
+             <h3>Skill-based services with quick visibility</h3>
+           </article>
+           <article class="mini-card">
+             <p class="eyebrow">Communities</p>
+             <h3>Fast access to nearby help</h3>
+           </article>
+           <article class="mini-card">
+             <p class="eyebrow">Judges</p>
+             <h3>Real UX without API dependency</h3>
+           </article>
+         </div>
+       </div>
+     </section>
+
+     <section class="section-block">
+       <div class="stats-grid">
+         <article class="metric-card">
+           <strong data-stat="jobs">0</strong>
+           <span class="metric-label">Active jobs</span>
+         </article>
+         <article class="metric-card">
+           <strong data-stat="services">0</strong>
+           <span class="metric-label">Available services</span>
+         </article>
+         <article class="metric-card">
+           <strong data-stat="categories">0</strong>
+           <span class="metric-label">Live categories</span>
+         </article>
+       </div>
+     </section>
+
+     <section class="section-block">
+       <div class="section-head">
+         <p class="eyebrow">Why it works</p>
+         <h2 class="section-title">Designed to feel like a real local marketplace from day one.</h2>
+       </div>
+       <div class="feature-grid">
+         <article class="feature-card">
+           <h3>Dual experience</h3>
+           <p class="section-copy">Users can either discover jobs or hire service providers from the same product
+             family.</p>
+         </article>
+         <article class="feature-card">
+           <h3>Persistent data</h3>
+           <p class="section-copy">Local Storage keeps new posts available after refresh, simulating real database
+             behavior.</p>
+         </article>
+         <article class="feature-card">
+           <h3>Clean interactions</h3>
+           <p class="section-copy">Filtering, posting, and action flows update instantly without extra complexity.</p>
+         </article>
+       </div>
+     </section>
+
+     <section class="section-block">
+       <div class="dashboard-grid">
+         <section class="panel-card">
+           <div class="inline-actions">
+             <div>
+               <p class="eyebrow">Latest jobs</p>
+               <h2>Fresh opportunities</h2>
+             </div>
+             <a class="button button-ghost" href="jobs.html">View all jobs</a>
+           </div>
+           <div class="listing-grid" data-dashboard-jobs></div>
+         </section>
+
+         <aside class="panel-card">
+           <p class="eyebrow">Quick actions</p>
+           <h2>Post to the marketplace</h2>
+           <div class="quick-grid">
+             <a class="quick-card" href="post-job.html">
+               <h3>Post a job</h3>
+               <p class="section-copy">Create a local opportunity and make it visible instantly.</p>
+             </a>
+             <a class="quick-card" href="post-service.html">
+               <h3>Offer a service</h3>
+               <p class="section-copy">Showcase your skills and let people hire you quickly.</p>
+             </a>
+           </div>
+           <p class="section-copy">
+             Future upgrades can add authentication, chat, payment, and matching without changing the core UX
+             direction.
+           </p>
+         </aside>
+       </div>
+     </section>
+
+     <section class="section-block">
+       <div class="panel-card">
+         <div class="inline-actions">
+           <div>
+             <p class="eyebrow">Featured services</p>
+             <h2>Trusted local providers</h2>
+           </div>
+           <a class="button button-ghost" href="service.html">View all services</a>
+         </div>
+         <div class="listing-grid" data-dashboard-services></div>
+       </div>
+     </section>
+   </main>
+
+   <p class="footer-note">WorkLink Lite is a frontend-only hackathon prototype built for clean UX, fast iteration, and
+     real-world relevance.</p>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
