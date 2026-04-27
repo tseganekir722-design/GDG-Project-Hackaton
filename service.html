@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorkLink Lite | Jobs</title>
+  <title>WorkLink Lite | Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
->>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,7 +19,6 @@
           <span>Local jobs and services</span>
         </span>
       </a>
-<<<<<<< HEAD
       <form class="header-search" action="#" method="get">
         <label class="header-search-field">
           <span class="sr-only">Search for services or people</span>
@@ -30,60 +26,52 @@
         </label>
         <button class="header-search-button" type="submit" aria-label="Search">Q</button>
       </form>
-=======
->>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
       <nav class="main-nav">
         <a href="dashboard.html">Dashboard</a>
-        <a class="is-active" href="jobs.html">Jobs</a>
-        <a href="service.html">Services</a>
-<<<<<<< HEAD
+        <a href="jobs.html">Jobs</a>
+        <a class="is-active" href="service.html">Services</a>
         <a href="conversations.html">Conversations</a>
-=======
->>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
         <a href="post-job.html">Post Job</a>
         <a href="post-service.html">Post Service</a>
       </nav>
       <div class="nav-account" data-nav-account></div>
     </header>
 
-<<<<<<< HEAD
     <div class="app-shell">
       <aside class="app-sidebar">
         <p class="sidebar-label">Workspace</p>
         <nav class="sidebar-nav">
           <a href="dashboard.html"><span class="sidebar-icon">D</span><span>Dashboard</span></a>
-          <a class="is-active" href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
-          <a href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
-          <a href="post-job.html"><span class="sidebar-icon">P</span><span>Post Job</span></a>
+          <a href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
+          <a class="is-active" href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
+          <a href="post-service.html"><span class="sidebar-icon">P</span><span>Post Service</span></a>
           <a href="dashboard.html#saved"><span class="sidebar-icon">F</span><span>Saved</span></a>
           <a href="conversations.html"><span class="sidebar-icon">C</span><span>Messages</span></a>
           <a href="dashboard.html#activity"><span class="sidebar-icon">A</span><span>Activity</span></a>
         </nav>
       </aside>
 
-=======
->>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
-    <main class="page-main" data-listing-page="jobs">
+    <main class="page-main" data-listing-page="services">
       <section class="page-hero page-hero-listing">
         <div class="page-hero-copy">
           <div class="hero-badge-row">
-            <span class="hero-badge">Jobs marketplace</span>
-            <span class="hero-badge hero-badge-soft">Simple local discovery</span>
+            <span class="hero-badge">Services marketplace</span>
+            <span class="hero-badge hero-badge-soft">Hire local talent</span>
           </div>
-          <p class="eyebrow">Short-term work, clearly organized</p>
-          <h1 class="page-title">Find short-term local work opportunities.</h1>
+          <p class="eyebrow">Service discovery made simple</p>
+          <h1 class="page-title">Discover local people ready to help.</h1>
           <p class="lead">
-            Browse practical openings, search by keyword, and filter by category. Everything here is powered by browser storage.
+            Explore service providers, search across categories, and simulate hiring flows in a clean frontend-only experience.
           </p>
         </div>
         <div class="page-hero-aside">
           <article class="hero-note">
             <span class="hero-note-kicker">Fast path</span>
-            <strong>Search, open details, save, and apply without leaving the grid.</strong>
+            <strong>Scan service cards, open details, save favorites, and hire from one clean workflow.</strong>
           </article>
           <article class="hero-note hero-note-accent">
-            <span class="hero-note-kicker">Built for clarity</span>
-            <strong>Open and closed statuses are visible at a glance, so the listing state never feels confusing.</strong>
+            <span class="hero-note-kicker">Built for trust</span>
+            <strong>Provider names and availability states stay visible so the decision feels quick and confident.</strong>
           </article>
         </div>
       </section>
@@ -93,15 +81,15 @@
           <div class="search-bar">
             <div class="toolbar">
               <div class="tab-row">
-                <a class="is-active" href="jobs.html">Jobs</a>
-                <a href="service.html">Services</a>
+                <a href="jobs.html">Jobs</a>
+                <a class="is-active" href="service.html">Services</a>
               </div>
               <label>
-                <span class="sr-only">Search jobs</span>
-                <input class="input" data-search-input type="search" placeholder="Search jobs by title, category, description, or location">
+                <span class="sr-only">Search services</span>
+                <input class="input" data-search-input type="search" placeholder="Search services by title, category, description, or provider">
               </label>
               <label>
-                <span class="sr-only">Filter jobs by category</span>
+                <span class="sr-only">Filter services by category</span>
                 <select class="select" data-category-select>
                   <option value="all">All categories</option>
                 </select>
@@ -111,7 +99,7 @@
           </div>
           <aside class="search-sidecard">
             <p class="eyebrow">At a glance</p>
-            <strong>Quickly narrow jobs by what people need, where they are, and what’s still open.</strong>
+            <strong>Compare providers by specialty, save the best fits, and keep hiring decisions lightweight.</strong>
           </aside>
         </div>
 
@@ -121,14 +109,14 @@
           <div class="inline-actions">
             <div>
               <p class="eyebrow">Available now</p>
-              <h2><span data-result-count>0</span> jobs matched</h2>
+              <h2><span data-result-count>0</span> services matched</h2>
             </div>
-            <a class="button button-secondary" href="post-job.html">Post a Job</a>
+            <a class="button button-secondary" href="post-service.html">Offer a Service</a>
           </div>
           <div class="listing-grid" data-listing-grid></div>
           <div class="empty-state" data-empty-state hidden>
-            <h3>No jobs found</h3>
-            <p>Try another search term or category, or add a fresh job listing.</p>
+            <h3>No services found</h3>
+            <p>Try another search term or category, or publish a new service offer.</p>
           </div>
         </div>
       </section>
@@ -136,9 +124,9 @@
       <section class="section-block">
         <div class="support-grid">
           <article class="support-card support-card-accent">
-            <p class="eyebrow">How it works</p>
-            <h3>Simple job discovery</h3>
-            <p class="section-copy" data-auth-status>Sign in to save listings and manage the jobs you post.</p>
+            <p class="eyebrow">Why this matters</p>
+            <h3>Local skill discovery</h3>
+            <p class="section-copy" data-auth-status>Sign in to save services and manage the ones you publish.</p>
           </article>
           <article class="support-card support-card-soft">
             <p class="eyebrow">Quick snapshot</p>
@@ -150,18 +138,15 @@
           <article class="support-card">
             <p class="eyebrow">Why it feels easy</p>
             <ul class="panel-list">
-              <li>Search and filter without friction.</li>
-              <li>Open details, save, and apply from the same card.</li>
-              <li>Statuses clearly show if a job is open or closed.</li>
+              <li>Filter providers quickly by keyword and category.</li>
+              <li>Open details, save, and hire from the same card.</li>
+              <li>Statuses clearly show if a service is available or paused.</li>
             </ul>
           </article>
         </div>
       </section>
     </main>
-<<<<<<< HEAD
     </div>
-=======
->>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
   </div>
 
   <script src="script.js"></script>

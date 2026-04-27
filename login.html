@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkLink Lite | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">WL</span>
+        <span class="brand-copy">
+          <strong>WorkLink Lite</strong>
+          <span>Local jobs and services</span>
+        </span>
+      </a>
+      <form class="header-search" action="#" method="get">
+        <label class="header-search-field">
+          <span class="sr-only">Search for services or people</span>
+          <input class="header-search-input" type="search" placeholder="Search for services or people...">
+        </label>
+        <button class="header-search-button" type="submit" aria-label="Search">Q</button>
+      </form>
+      <nav class="main-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="service.html">Services</a>
+        <a href="conversations.html">Conversations</a>
+        <a class="is-active" href="login.html">Login</a>
+      </nav>
+      <div class="nav-account" data-nav-account></div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <p class="sidebar-label">Workspace</p>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html"><span class="sidebar-icon">D</span><span>Dashboard</span></a>
+          <a href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
+          <a href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
+          <a href="dashboard.html#my-listings"><span class="sidebar-icon">M</span><span>My Listings</span></a>
+          <a href="dashboard.html#saved"><span class="sidebar-icon">F</span><span>Saved</span></a>
+          <a href="conversations.html"><span class="sidebar-icon">C</span><span>Messages</span></a>
+          <a class="is-active" href="login.html"><span class="sidebar-icon">L</span><span>Login</span></a>
+        </nav>
+      </aside>
+
+    <main class="page-main">
+      <section class="page-hero page-hero-form">
+        <div class="page-hero-copy">
+          <div class="hero-badge-row">
+            <span class="hero-badge">Demo access</span>
+            <span class="hero-badge hero-badge-soft">No backend required</span>
+          </div>
+          <p class="eyebrow">Simple sign-in experience</p>
+          <h1 class="page-title">Log in to continue</h1>
+          <p class="lead">This lightweight sign-in flow keeps the prototype easy to test while still making the experience feel personal.</p>
+        </div>
+        <div class="page-hero-aside">
+          <article class="hero-note hero-note-accent">
+            <span class="hero-note-kicker">What unlocks after login</span>
+            <strong>Own your posts, save listings, track activity, and make the dashboard feel like your space.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block form-shell">
+        <form class="form-card form-card-elevated" data-login-form>
+          <div class="form-card-head">
+            <p class="eyebrow">Demo access</p>
+            <h2>Welcome back</h2>
+            <p class="section-copy">Use any demo name and email to create a local session for this prototype.</p>
+          </div>
+
+          <label class="field">
+            <span>Name</span>
+            <input class="input" name="name" type="text" placeholder="Your demo name" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input class="input" name="email" type="email" placeholder="name@example.com" required>
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input class="input" name="password" type="password" placeholder="Enter password" required>
+          </label>
+
+          <button class="button button-primary" type="submit">Demo Login</button>
+          <div class="notice is-hidden" data-form-notice></div>
+        </form>
+
+        <aside class="form-aside">
+          <article class="support-card support-card-accent">
+            <p class="eyebrow">Prototype note</p>
+            <h3>Frontend-only experience</h3>
+            <p class="section-copy">This login is intentionally lightweight so the product stays fast, simple, and presentation-ready.</p>
+          </article>
+          <article class="support-card support-card-soft">
+            <p class="eyebrow">Why it helps</p>
+            <ul class="panel-list">
+              <li>Lets you own your posts and saved items.</li>
+              <li>Makes the dashboard feel personal instantly.</li>
+              <li>Keeps the interaction model clean for first-time users.</li>
+            </ul>
+          </article>
+          <article class="support-card">
+            <p class="eyebrow">Test real replies</p>
+            <h3>Use poster demo accounts</h3>
+            <p class="section-copy">Try `maya.coleman@worklink.demo`, `jordan.brooks@worklink.demo`, `amara@worklink.demo`, or `nico.alvarez@worklink.demo` to reply as seeded posters.</p>
+          </article>
+        </aside>
+      </section>
+
+    </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
