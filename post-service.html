@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,3 +139,96 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WorkLink Lite | Post Service</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="page-shell">
+   <header class="site-header">
+     <a class="brand" href="dashboard.html">
+       <span class="brand-mark">WL</span>
+       <span class="brand-copy">
+         <strong>WorkLink Lite</strong>
+         <span>Local jobs and services</span>
+       </span>
+     </a>
+     <nav class="main-nav">
+       <a href="dashboard.html">Dashboard</a>
+       <a href="jobs.html">Jobs</a>
+       <a href="service.html">Services</a>
+       <a href="post-job.html">Post Job</a>
+       <a class="is-active" href="post-service.html">Post Service</a>
+     </nav>
+   </header>
+
+   <main>
+     <section class="section-block">
+       <div class="section-head">
+         <p class="eyebrow">Offer your skills</p>
+         <h1 class="page-title">Publish a service and get discovered locally.</h1>
+         <p class="lead">
+           Add your service title, category, details, and provider name. The listing is stored in the browser and shows up immediately on the services page.
+         </p>
+       </div>
+     </section>
+
+     <section class="section-block form-layout">
+       <form class="form-card" data-form-type="service">
+         <div>
+           <p class="eyebrow">Service form</p>
+           <h2>Create a service listing</h2>
+         </div>
+
+         <div class="form-grid">
+           <label class="field">
+             <span>Service title</span>
+             <input class="input" name="title" type="text" placeholder="Home cleaning service" required>
+           </label>
+           <label class="field">
+             <span>Category</span>
+             <input class="input" name="category" type="text" placeholder="Cleaning" required>
+           </label>
+           <label class="field field-full">
+             <span>Description</span>
+             <textarea class="textarea" name="description" rows="6" placeholder="Describe what you offer..." required></textarea>
+           </label>
+           <label class="field">
+             <span>Provider name</span>
+             <input class="input" name="provider" type="text" placeholder="Your name or team" required>
+           </label>
+         </div>
+
+         <div class="inline-actions">
+           <button class="button button-primary" type="submit">Publish Service</button>
+           <a class="button button-secondary" href="service.html">View Services</a>
+         </div>
+         <div class="notice is-hidden" data-form-notice></div>
+       </form>
+
+       <aside class="panel-card">
+         <p class="eyebrow">Tips</p>
+         <h2>Stand out clearly</h2>
+         <ul class="panel-list">
+           <li>Use a service title people would actually search for.</li>
+           <li>Keep the description practical and easy to scan.</li>
+           <li>Choose a category that matches the service outcome.</li>
+           <li>Use a provider name that builds trust.</li>
+         </ul>
+       </aside>
+     </section>
+   </main>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 586748d80a5b03438b00a804a2f61c2357fa9cc7
