@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkLink Lite | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page-shell" data-dashboard>
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">WL</span>
+        <span class="brand-copy">
+          <strong>WorkLink Lite</strong>
+          <span>Local jobs and services</span>
+        </span>
+      </a>
+      <form class="header-search" action="#" method="get">
+        <label class="header-search-field">
+          <span class="sr-only">Search for services or people</span>
+          <input class="header-search-input" type="search" placeholder="Search for services or people...">
+        </label>
+        <button class="header-search-button" type="submit" aria-label="Search">Q</button>
+      </form>
+      <nav class="main-nav">
+        <a class="is-active" href="dashboard.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="service.html">Services</a>
+        <a href="conversations.html">Conversations</a>
+        <a href="post-job.html">Post Job</a>
+        <a href="post-service.html">Post Service</a>
+      </nav>
+      <div class="nav-account" data-nav-account></div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <p class="sidebar-label">Workspace</p>
+        <nav class="sidebar-nav">
+          <a class="is-active" href="dashboard.html"><span class="sidebar-icon">D</span><span>Dashboard</span></a>
+          <a href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
+          <a href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
+          <a href="dashboard.html#my-listings"><span class="sidebar-icon">M</span><span>My Listings</span></a>
+          <a href="dashboard.html#saved"><span class="sidebar-icon">F</span><span>Saved</span></a>
+          <a href="conversations.html"><span class="sidebar-icon">C</span><span>Messages</span></a>
+          <a href="dashboard.html#activity"><span class="sidebar-icon">A</span><span>Activity</span></a>
+        </nav>
+      </aside>
+
+    <main class="page-main">
+      <section class="hero hero-home">
+        <div class="hero-panel hero-copy">
+          <div class="hero-badge-row">
+            <span class="hero-badge">Frontend-only prototype</span>
+            <span class="hero-badge hero-badge-soft">Local-first marketplace</span>
+          </div>
+          <p class="eyebrow">Startup-ready local opportunity platform</p>
+          <h1 class="display-title">Find local work or hire local talent faster.</h1>
+          <p class="lead">
+            WorkLink Lite combines a practical jobs board with a service marketplace, using only HTML, CSS,
+            and JavaScript to simulate a real platform.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="jobs.html">Explore Jobs</a>
+            <a class="button button-secondary" href="service.html">Browse Services</a>
+          </div>
+          <div class="hero-metrics">
+            <article class="hero-metric">
+              <strong data-stat="jobs">0</strong>
+              <span>Jobs live now</span>
+            </article>
+            <article class="hero-metric">
+              <strong data-stat="services">0</strong>
+              <span>Services available</span>
+            </article>
+            <article class="hero-metric">
+              <strong data-stat="saved">0</strong>
+              <span>Saved by you</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-panel hero-visual">
+          <div class="spotlight-card">
+            <p class="eyebrow">What makes it feel real</p>
+            <h2>Browse, post, search, apply, and hire from one polished interface.</h2>
+            <p class="section-copy">The product flow is simple enough for a first-time user and strong enough for a hackathon demo.</p>
+          </div>
+          <div class="mini-card-grid">
+            <article class="mini-card">
+              <p class="eyebrow">Students</p>
+              <h3>Side gigs and flexible opportunities</h3>
+            </article>
+            <article class="mini-card">
+              <p class="eyebrow">Freelancers</p>
+              <h3>Skill-based services with quick visibility</h3>
+            </article>
+            <article class="mini-card">
+              <p class="eyebrow">Communities</p>
+              <h3>Fast access to nearby help</h3>
+            </article>
+            <article class="mini-card">
+              <p class="eyebrow">Judges</p>
+              <h3>Real UX without API dependency</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="stats-grid stats-grid-featured">
+          <article class="metric-card">
+            <strong data-stat="jobs">0</strong>
+            <span class="metric-label">Active jobs</span>
+          </article>
+          <article class="metric-card">
+            <strong data-stat="services">0</strong>
+            <span class="metric-label">Available services</span>
+          </article>
+          <article class="metric-card">
+            <strong data-stat="categories">0</strong>
+            <span class="metric-label">Live categories</span>
+          </article>
+          <article class="metric-card">
+            <strong data-stat="saved">0</strong>
+            <span class="metric-label">Saved listings</span>
+          </article>
+          <article class="metric-card">
+            <strong data-stat="records">0</strong>
+            <span class="metric-label">Apply and hire records</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-head section-head-wide">
+          <p class="eyebrow">Why it works</p>
+          <h2 class="section-title">Designed to feel like a real local marketplace from day one.</h2>
+          <p class="section-copy">A clear structure, fast actions, and persistent local data make the experience feel dependable instead of demo-only.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Dual experience</h3>
+            <p class="section-copy">Users can either discover jobs or hire service providers from the same product
+              family.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Persistent data</h3>
+            <p class="section-copy">Local Storage keeps new posts available after refresh, simulating real database
+              behavior.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Clean interactions</h3>
+            <p class="section-copy">Filtering, posting, and action flows update instantly without extra complexity.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="dashboard-grid dashboard-grid-hero">
+          <section class="panel-card panel-card-spotlight">
+            <div class="inline-actions">
+              <div>
+                <p class="eyebrow">Latest jobs</p>
+                <h2>Fresh opportunities</h2>
+              </div>
+              <a class="button button-ghost" href="jobs.html">View all jobs</a>
+            </div>
+            <div class="listing-grid" data-dashboard-jobs></div>
+          </section>
+
+          <aside class="panel-card panel-card-stack">
+            <p class="eyebrow">Quick actions</p>
+            <h2>Post to the marketplace</h2>
+            <div class="quick-grid">
+              <a class="quick-card" href="post-job.html">
+                <h3>Post a job</h3>
+                <p class="section-copy">Create a local opportunity and make it visible instantly.</p>
+              </a>
+              <a class="quick-card" href="post-service.html">
+                <h3>Offer a service</h3>
+                <p class="section-copy">Showcase your skills and let people hire you quickly.</p>
+              </a>
+              <a class="quick-card" href="conversations.html">
+                <h3>Open conversations</h3>
+                <p class="section-copy">See your applications, hire requests, and local chat threads in one place.</p>
+              </a>
+            </div>
+            <p class="section-copy">
+              Future upgrades can add authentication, chat, payment, and matching without changing the core UX
+              direction.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-block split-layout" id="saved">
+        <section class="panel-card">
+          <div class="inline-actions">
+            <div>
+              <p class="eyebrow">Your profile</p>
+              <h2>Mini profile overview</h2>
+            </div>
+            <span class="pill" data-theme-label>Warm theme</span>
+          </div>
+          <div class="profile-grid" data-profile-grid></div>
+        </section>
+
+        <aside class="panel-card panel-card-stack">
+          <p class="eyebrow">Recently viewed</p>
+          <h2>Listings you opened last</h2>
+          <div class="history-list" data-recent-list></div>
+          <div class="empty-state" data-recent-empty hidden>
+            <h3>No recently viewed listings</h3>
+            <p>Open any listing details modal and it will appear here for quick access.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block">
+        <div class="panel-card">
+          <div class="inline-actions">
+            <div>
+              <p class="eyebrow">Featured services</p>
+              <h2>Trusted local providers</h2>
+            </div>
+            <a class="button button-ghost" href="service.html">View all services</a>
+          </div>
+          <div class="listing-grid" data-dashboard-services></div>
+        </div>
+      </section>
+
+      <section class="section-block split-layout" id="my-listings">
+        <section class="panel-card">
+          <div class="inline-actions">
+            <div>
+              <p class="eyebrow">Saved for later</p>
+              <h2>Your bookmarked listings</h2>
+            </div>
+            <span class="pill"><span data-stat="saved">0</span> saved</span>
+          </div>
+          <div class="listing-grid" data-saved-grid></div>
+          <div class="empty-state" data-saved-empty hidden>
+            <h3>No saved listings yet</h3>
+            <p>Use the save button on any job or service to keep it here for quick access.</p>
+          </div>
+        </section>
+
+        <aside class="panel-card panel-card-stack" id="activity">
+          <p class="eyebrow">Recent activity</p>
+          <h2>Simple activity history</h2>
+          <p class="section-copy" data-auth-status>Sign in to start tracking your actions and posted listings.</p>
+          <div class="history-list" data-activity-list></div>
+          <div class="empty-state" data-activity-empty hidden>
+            <h3>No activity yet</h3>
+            <p>Applying, hiring, saving, posting, and editing listings will appear here.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block split-layout">
+        <section class="panel-card">
+          <div class="inline-actions">
+            <div>
+              <p class="eyebrow">My listings</p>
+              <h2>Your posted jobs and services</h2>
+            </div>
+            <span class="pill" data-auth-status-short>Sign in</span>
+          </div>
+          <div class="listing-grid" data-my-listings-grid></div>
+          <div class="empty-state" data-my-listings-empty hidden>
+            <h3>No personal listings yet</h3>
+            <p>Post a job or service while signed in and it will appear here.</p>
+          </div>
+        </section>
+
+        <aside class="panel-card panel-card-stack">
+          <p class="eyebrow">Interaction records</p>
+          <h2>Applications and hires</h2>
+          <div class="history-list" data-records-list></div>
+          <div class="empty-state" data-records-empty hidden>
+            <h3>No records yet</h3>
+            <p>When you apply to a job or hire a service, the record will appear here.</p>
+          </div>
+          <div class="compact-action">
+            <p class="section-copy">Need a clean demo reset? This will clear jobs, services, login state, saved items, and records.</p>
+            <button class="button button-danger" type="button" data-action="reset-demo">Clear Demo Data</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    </div>
+
+    <p class="footer-note">WorkLink Lite is a frontend-only hackathon prototype built for clean UX, fast iteration, and
+      real-world relevance.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

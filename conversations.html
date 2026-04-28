@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkLink Lite | Conversations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">WL</span>
+        <span class="brand-copy">
+          <strong>WorkLink Lite</strong>
+          <span>Local jobs and services</span>
+        </span>
+      </a>
+      <form class="header-search" action="#" method="get">
+        <label class="header-search-field">
+          <span class="sr-only">Search for services or people</span>
+          <input class="header-search-input" type="search" placeholder="Search for services or people...">
+        </label>
+        <button class="header-search-button" type="submit" aria-label="Search">Q</button>
+      </form>
+      <nav class="main-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="service.html">Services</a>
+        <a class="is-active" href="conversations.html">Conversations</a>
+        <a href="post-job.html">Post Job</a>
+        <a href="post-service.html">Post Service</a>
+      </nav>
+      <div class="nav-account" data-nav-account></div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <p class="sidebar-label">Workspace</p>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html"><span class="sidebar-icon">D</span><span>Dashboard</span></a>
+          <a href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
+          <a href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
+          <a href="dashboard.html#my-listings"><span class="sidebar-icon">M</span><span>My Listings</span></a>
+          <a href="dashboard.html#saved"><span class="sidebar-icon">F</span><span>Saved</span></a>
+          <a class="is-active" href="conversations.html"><span class="sidebar-icon">C</span><span>Messages</span></a>
+          <a href="dashboard.html#activity"><span class="sidebar-icon">A</span><span>Activity</span></a>
+        </nav>
+      </aside>
+
+    <main class="page-main" data-conversations-page>
+      <section class="page-hero page-hero-listing">
+        <div class="page-hero-copy">
+          <div class="hero-badge-row">
+            <span class="hero-badge">Conversations</span>
+            <span class="hero-badge hero-badge-soft">Apply, hire, and chat</span>
+          </div>
+          <p class="eyebrow">Simple communication flow</p>
+          <h1 class="page-title">Manage applications, hire requests, and local chat in one place.</h1>
+          <p class="lead">Every apply or hire request starts a saved conversation, so the demo now feels much closer to a real marketplace product.</p>
+        </div>
+        <div class="page-hero-aside">
+          <article class="hero-note">
+            <span class="hero-note-kicker">How it works</span>
+            <strong>Apply or hire from any listing, then continue the discussion here with simple local chat threads.</strong>
+          </article>
+          <article class="hero-note hero-note-accent">
+            <span class="hero-note-kicker">Important note</span>
+            <strong>This is a frontend-only simulation, so conversations are stored in your browser with Local Storage.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="conversation-layout">
+          <aside class="panel-card conversation-sidebar">
+            <div>
+              <p class="eyebrow">Threads</p>
+              <h2>Your conversations</h2>
+              <p class="section-copy">Open any request thread to keep chatting.</p>
+            </div>
+            <div class="conversation-list" data-conversation-list></div>
+            <div class="empty-state" data-conversation-empty hidden>
+              <h3>No conversations yet</h3>
+              <p>Send an application or hire request from the jobs or services pages to create your first thread.</p>
+            </div>
+          </aside>
+
+          <section class="panel-card conversation-panel">
+            <div class="conversation-header">
+              <div>
+                <p class="eyebrow">Selected thread</p>
+                <h2 data-conversation-title>No conversation selected</h2>
+                <p class="section-copy" data-conversation-meta>Send an application or hire request to start chatting.</p>
+              </div>
+            </div>
+
+            <div class="conversation-messages" data-conversation-messages></div>
+            <div class="empty-state" data-chat-empty>
+              <h3>No active chat selected</h3>
+              <p>Choose a thread from the left side to view the request details and messages.</p>
+            </div>
+
+            <form class="conversation-form" data-chat-form hidden>
+              <label class="field field-full">
+                <span>New message</span>
+                <textarea class="textarea" name="message" rows="4" placeholder="Write your next message..."></textarea>
+              </label>
+              <div class="inline-actions">
+                <button class="button button-primary" type="submit">Send Message</button>
+              </div>
+              <div class="notice is-hidden" data-chat-notice></div>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

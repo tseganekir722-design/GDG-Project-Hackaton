@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkLink Lite | Post Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-mark">WL</span>
+        <span class="brand-copy">
+          <strong>WorkLink Lite</strong>
+          <span>Local jobs and services</span>
+        </span>
+      </a>
+      <form class="header-search" action="#" method="get">
+        <label class="header-search-field">
+          <span class="sr-only">Search for services or people</span>
+          <input class="header-search-input" type="search" placeholder="Search for services or people...">
+        </label>
+        <button class="header-search-button" type="submit" aria-label="Search">Q</button>
+      </form>
+      <nav class="main-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="service.html">Services</a>
+        <a href="conversations.html">Conversations</a>
+        <a href="post-job.html">Post Job</a>
+        <a class="is-active" href="post-service.html">Post Service</a>
+      </nav>
+      <div class="nav-account" data-nav-account></div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <p class="sidebar-label">Workspace</p>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html"><span class="sidebar-icon">D</span><span>Dashboard</span></a>
+          <a href="jobs.html"><span class="sidebar-icon">J</span><span>Jobs</span></a>
+          <a href="service.html"><span class="sidebar-icon">S</span><span>Services</span></a>
+          <a class="is-active" href="post-service.html"><span class="sidebar-icon">P</span><span>Post Service</span></a>
+          <a href="dashboard.html#my-listings"><span class="sidebar-icon">M</span><span>My Listings</span></a>
+          <a href="conversations.html"><span class="sidebar-icon">C</span><span>Messages</span></a>
+          <a href="dashboard.html#activity"><span class="sidebar-icon">A</span><span>Activity</span></a>
+        </nav>
+      </aside>
+
+    <main class="page-main">
+      <section class="page-hero page-hero-form">
+        <div class="page-hero-copy">
+          <div class="hero-badge-row">
+            <span class="hero-badge">Offer a service</span>
+            <span class="hero-badge hero-badge-soft">Built for discovery</span>
+          </div>
+          <p class="eyebrow">Offer your skills</p>
+          <h1 class="page-title">Publish a service and get discovered locally.</h1>
+          <p class="lead">
+            Add your service title, category, details, and provider name. The listing is stored in the browser and shows up immediately on the services page.
+          </p>
+        </div>
+        <div class="page-hero-aside">
+          <article class="hero-note">
+            <span class="hero-note-kicker">Best results</span>
+            <strong>Strong service titles and provider identity help your offer stand out before anyone opens the details modal.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block form-shell">
+        <form class="form-card form-card-elevated" data-form-type="service">
+          <div class="form-card-head">
+            <p class="eyebrow">Service form</p>
+            <h2>Create a service listing</h2>
+            <p class="section-copy">Your draft is saved automatically while you type.</p>
+          </div>
+
+          <div class="form-grid">
+            <label class="field">
+              <span>Service title</span>
+              <input class="input" name="title" type="text" placeholder="Home cleaning service" required>
+            </label>
+            <label class="field">
+              <span>Category</span>
+              <input class="input" name="category" type="text" placeholder="Cleaning" required>
+            </label>
+            <label class="field field-full">
+              <span>Description</span>
+              <textarea class="textarea" name="description" rows="6" placeholder="Describe what you offer..." required></textarea>
+            </label>
+            <label class="field">
+              <span>Provider name</span>
+              <input class="input" name="provider" type="text" placeholder="Your name or team" required>
+            </label>
+            <label class="field">
+              <span>Status</span>
+              <select class="select" name="status" required>
+                <option value="Available">Available</option>
+                <option value="Paused">Paused</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="inline-actions">
+            <button class="button button-primary" type="submit">Publish Service</button>
+            <a class="button button-secondary" href="service.html">View Services</a>
+            <button class="button button-ghost" type="button" data-action="clear-draft">Clear Draft</button>
+          </div>
+          <div class="notice is-hidden" data-form-notice></div>
+        </form>
+
+        <aside class="form-aside">
+          <article class="support-card support-card-accent">
+            <p class="eyebrow">Posting tips</p>
+            <h3>Stand out clearly</h3>
+            <p class="section-copy" data-auth-status>Sign in first to publish a service and edit it later.</p>
+          </article>
+          <article class="support-card support-card-soft">
+            <p class="eyebrow">Best practice</p>
+            <ul class="panel-list">
+              <li>Use a service title people would actually search for.</li>
+              <li>Keep the description practical and easy to scan.</li>
+              <li>Use a provider name that builds trust right away.</li>
+            </ul>
+          </article>
+        </aside>
+      </section>
+
+    </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
